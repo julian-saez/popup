@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, p, button {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+button {
+    font-weight: 600;
+    padding: 10px 50px;
+    font-size: 0.9rem;
+    border: 0;
+    outline: none;
+    background-color: #FF6B00;
+    color: white;
+}
+
+/* 
+    Este contenedor sirve como elemento padre de ventana modal, asi podemos centrar la ventana en el viewport. 
+    Cuando la ventana modal no se muestra, este contenedor tiene su display: none para hacerlo invisible a la vista del usuario. 
+*/
+
+#contenedor-modal {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estas son las propiedades de la ventana modal para centrar el texto y otros estilos más */
+#ventana-modal {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ventana-modal h2 {
+    text-align: left;
+    margin-top: 35px;
+    margin-bottom: -5px;
+}
+
+
+#ventana-modal p {
+    font-size: 1.1rem;
+}
+
+#ventana-modal button {
+    margin: 20px 0;
+}
+
